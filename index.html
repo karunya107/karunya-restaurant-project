@@ -1,0 +1,894 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Karunya Restaurant | Authentic Taste</title>
+
+    <meta name="description"
+        content="Enjoy delicious South Indian food, biryani, meals and special combos at Karunya Restaurant.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <p>
+            <i class="fa-solid fa-utensils"></i>
+            Fresh Food. Authentic Taste. Happy Moments.
+        </p>
+    </div>
+
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-bowl-food"></i>
+            <span>KARUNYA <small>RESTAURANT</small></span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#offers">Offers</a>
+            <a href="#about">About</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="#cart" class="cart-link">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart <span id="cart-count">0</span>
+            </a>
+
+            <a href="#reservation" class="btn btn-primary nav-book">
+                Book a Table
+            </a>
+        </div>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="section-tag">
+                WELCOME TO KARUNYA RESTAURANT
+            </span>
+
+            <h1>
+                Good Food.
+                <span>Great Mood.</span>
+                Beautiful Moments.
+            </h1>
+
+            <p>
+                Experience the authentic taste of South Indian cuisine.
+                Fresh ingredients, traditional recipes and unforgettable flavours.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">
+                    Explore Menu <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#offers" class="btn btn-outline">
+                    View Offers
+                </a>
+            </div>
+
+            <div class="hero-rating">
+                <div class="rating-stars">★★★★★</div>
+                <p>Delicious food, made with love</p>
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=1000&q=85"
+                alt="Delicious Indian food served on a plate">
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="features">
+
+        <div class="feature-item">
+            <i class="fa-solid fa-leaf"></i>
+            <div>
+                <h3>Fresh Ingredients</h3>
+                <p>Quality ingredients every day</p>
+            </div>
+        </div>
+
+        <div class="feature-item">
+            <i class="fa-solid fa-bowl-food"></i>
+            <div>
+                <h3>Authentic Taste</h3>
+                <p>Traditional recipes and flavours</p>
+            </div>
+        </div>
+
+        <div class="feature-item">
+            <i class="fa-solid fa-heart"></i>
+            <div>
+                <h3>Made with Love</h3>
+                <p>Every meal made with care</p>
+            </div>
+        </div>
+
+        <div class="feature-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div>
+                <h3>Easy Ordering</h3>
+                <p>Choose your favourite food</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about section-padding" id="about">
+
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=85"
+                alt="Restaurant dining experience">
+        </div>
+
+        <div class="about-content">
+
+            <span class="section-tag">OUR STORY</span>
+
+            <h2>
+                A Place Where
+                <span>Food Brings Happiness</span>
+            </h2>
+
+            <p>
+                At Karunya Restaurant, we believe every meal should be special.
+                Our menu brings together authentic Indian flavours,
+                carefully selected ingredients and warm hospitality.
+            </p>
+
+            <p>
+                Whether you are enjoying breakfast with family,
+                lunch with friends or dinner after a long day,
+                we welcome you with delicious food and a beautiful experience.
+            </p>
+
+            <a href="#menu" class="btn btn-primary">
+                Discover Our Menu
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- MENU SECTION -->
+    <section class="menu-section section-padding" id="menu">
+
+        <div class="section-heading">
+            <span class="section-tag">OUR MENU</span>
+            <h2>Explore Our <span>Delicious Food</span></h2>
+            <p>Freshly prepared favourites for every craving.</p>
+        </div>
+
+        <!-- MENU FILTERS -->
+        <div class="menu-filters">
+
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+            <button class="filter-btn" data-filter="meals">Meals</button>
+            <button class="filter-btn" data-filter="biryani">Biryani</button>
+            <button class="filter-btn" data-filter="starters">Starters</button>
+            <button class="filter-btn" data-filter="desserts">Desserts</button>
+            <button class="filter-btn" data-filter="beverages">Beverages</button>
+
+        </div>
+
+
+        <!-- FOOD CARDS -->
+        <div class="menu-grid">
+
+            <article class="menu-card" data-category="breakfast">
+
+                <div class="menu-image">
+                    <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=700&q=85"
+                        alt="Masala dosa">
+                    <span class="food-label">Popular</span>
+                </div>
+
+                <div class="menu-info">
+                    <div class="menu-title">
+                        <h3>Masala Dosa</h3>
+                        <span>₹90</span>
+                    </div>
+                    <p>Crispy dosa with delicious potato masala and chutneys.</p>
+                    <button class="btn btn-primary add-to-cart"
+                        data-id="1" data-name="Masala Dosa" data-price="90">
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+
+            </article>
+
+
+            <article class="menu-card" data-category="breakfast">
+
+                <div class="menu-image">
+                    <img src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=700&q=85"
+                        alt="Idli and sambar">
+                </div>
+
+                <div class="menu-info">
+                    <div class="menu-title">
+                        <h3>Idli Sambar</h3>
+                        <span>₹60</span>
+                    </div>
+                    <p>Soft steamed idlis served with hot sambar and chutney.</p>
+                    <button class="btn btn-primary add-to-cart"
+                        data-id="2" data-name="Idli Sambar" data-price="60">
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+
+            </article>
+
+
+            <article class="menu-card" data-category="meals">
+
+                <div class="menu-image">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=700&q=85"
+                        alt="South Indian meals">
+                    <span class="food-label">Chef's Choice</span>
+                </div>
+
+                <div class="menu-info">
+                    <div class="menu-title">
+                        <h3>South Indian Meals</h3>
+                        <span>₹150</span>
+                    </div>
+                    <p>Traditional rice meal with vegetables and accompaniments.</p>
+                    <button class="btn btn-primary add-to-cart"
+                        data-id="3" data-name="South Indian Meals" data-price="150">
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+
+            </article>
+
+
+            <article class="menu-card" data-category="biryani">
+
+                <div class="menu-image">
+                    <img src="https://cloverstatic.com/menu-assets/items/580MDBVZXEXDP_1500x1125.jpeg"
+                        alt="Chicken biryani">
+                    <span class="food-label">Bestseller</span>
+                </div>
+
+                <div class="menu-info">
+                    <div class="menu-title">
+                        <h3>Chicken Biryani</h3>
+                        <span>₹220</span>
+                    </div>
+                    <p>Fragrant basmati rice cooked with aromatic spices.</p>
+                    <button class="btn btn-primary add-to-cart"
+                        data-id="4" data-name="Chicken Biryani" data-price="220">
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+
+            </article>
+
+
+            <article class="menu-card" data-category="starters">
+
+                <div class="menu-image">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=700&q=85"
+                        alt="Vegetable samosa">
+                </div>
+
+                <div class="menu-info">
+                    <div class="menu-title">
+                        <h3>Veg Samosa</h3>
+                        <span>₹50</span>
+                    </div>
+                    <p>Crispy pastry filled with spiced potatoes and peas.</p>
+                    <button class="btn btn-primary add-to-cart"
+                        data-id="5" data-name="Veg Samosa" data-price="50">
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+
+            </article>
+
+
+            <article class="menu-card" data-category="starters">
+
+                <div class="menu-image">
+                    <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=700&q=85"
+                        alt="Paneer tikka">
+                </div>
+
+                <div class="menu-info">
+                    <div class="menu-title">
+                        <h3>Paneer Tikka</h3>
+                        <span>₹180</span>
+                    </div>
+                    <p>Grilled paneer cubes with a rich Indian spice marinade.</p>
+                    <button class="btn btn-primary add-to-cart"
+                        data-id="6" data-name="Paneer Tikka" data-price="180">
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+
+            </article>
+
+
+            <article class="menu-card" data-category="desserts">
+
+                <div class="menu-image">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700&q=85"
+                        alt="Chocolate cake">
+                </div>
+
+                <div class="menu-info">
+                    <div class="menu-title">
+                        <h3>Chocolate Cake</h3>
+                        <span>₹120</span>
+                    </div>
+                    <p>Rich and soft chocolate cake for your sweet cravings.</p>
+                    <button class="btn btn-primary add-to-cart"
+                        data-id="7" data-name="Chocolate Cake" data-price="120">
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+
+            </article>
+
+
+            <article class="menu-card" data-category="beverages">
+
+                <div class="menu-image">
+                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=700&q=85"
+                        alt="Cold coffee">
+                </div>
+
+                <div class="menu-info">
+                    <div class="menu-title">
+                        <h3>Cold Coffee</h3>
+                        <span>₹90</span>
+                    </div>
+                    <p>Chilled creamy coffee, perfect for a refreshing break.</p>
+                    <button class="btn btn-primary add-to-cart"
+                        data-id="8" data-name="Cold Coffee" data-price="90">
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- OFFERS SECTION -->
+    <section class="offers-section section-padding" id="offers">
+
+        <div class="section-heading">
+            <span class="section-tag">SPECIAL OFFERS</span>
+            <h2>Enjoy More. <span>Spend Less.</span></h2>
+            <p>Delicious combinations made for sharing happiness.</p>
+        </div>
+
+        <div class="offers-grid">
+
+            <article class="offer-card">
+
+                <img src="https://traditionallymodernfood.com/wp-content/uploads/2023/01/cooking-for-guests-south-indian-lunch-combo-1-scaled.jpeg"
+                
+        
+                    alt="South Indian family combo">
+
+                <div class="offer-content">
+                    <span class="offer-label">FAMILY SPECIAL</span>
+                    <h3>Family Lunch Combo</h3>
+                    <p>4 South Indian meals with delicious accompaniments.</p>
+
+                    <div class="offer-price">
+                        <span>₹499</span>
+                        <del>₹600</del>
+                    </div>
+
+                    <button class="btn btn-primary add-to-cart"
+                        data-id="101" data-name="Family Lunch Combo" data-price="499">
+                        Order Combo
+                    </button>
+                </div>
+
+            </article>
+
+
+            <article class="offer-card">
+
+                <img src="https://tse2.mm.bing.net/th/id/OIP.ag6Mysp3AAEYdMN-q505iAHaE8?r=0&pid=Api&h=220&P=0"
+                    alt="Biryani combo">
+
+                <div class="offer-content">
+                    <span class="offer-label">BEST VALUE</span>
+                    <h3>Biryani Combo</h3>
+                    <p>Chicken biryani with a refreshing drink.</p>
+
+                    <div class="offer-price">
+                        <span>₹249</span>
+                        <del>₹300</del>
+                    </div>
+
+                    <button class="btn btn-primary add-to-cart"
+                        data-id="102" data-name="Biryani Combo" data-price="249">
+                        Order Combo
+                    </button>
+                </div>
+
+            </article>
+
+
+            <article class="offer-card">
+
+                <img src="https://130343849.cdn6.editmysite.com/uploads/1/3/0/3/130343849/s215635617628572343_p86_i1_w1920.jpeg"
+                    alt="Veg meal combo">
+
+                <div class="offer-content">
+                    <span class="offer-label">LUNCH SPECIAL</span>
+                    <h3>Veg Delight Combo</h3>
+                    <p>Vegetarian meal with a sweet dessert.</p>
+
+                    <div class="offer-price">
+                        <span>₹179</span>
+                        <del>₹220</del>
+                    </div>
+
+                    <button class="btn btn-primary add-to-cart"
+                        data-id="103" data-name="Veg Delight Combo" data-price="179">
+                        Order Combo
+                    </button>
+                </div>
+
+            </article>
+
+        </div>
+
+        <p class="offer-note">
+            *All prices and discounts are sample values for this demo website.
+        </p>
+
+    </section>
+
+
+    <!-- CART SECTION -->
+    <section class="cart-section section-padding" id="cart">
+
+        <div class="section-heading">
+            <span class="section-tag">YOUR ORDER</span>
+            <h2>Your <span>Shopping Cart</span></h2>
+            <p>Your favourite food, all in one place.</p>
+        </div>
+
+        <div class="cart-container">
+
+            <div class="cart-items" id="cart-items">
+                <div class="empty-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h3>Your cart is empty</h3>
+                    <p>Add some delicious food from our menu!</p>
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+
+                <h3>Order Summary</h3>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">₹0</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery Fee</span>
+                    <span id="delivery-fee">₹0</span>
+                </div>
+
+                <div class="summary-row total-row">
+                    <strong>Total</strong>
+                    <strong id="cart-total">₹0</strong>
+                </div>
+
+                <button class="btn btn-primary checkout-btn" id="checkout-btn">
+                    Proceed to Checkout
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <p class="cart-note">
+                    Demo checkout only. No real payment will be processed.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SPECIAL DISH -->
+    <section class="special-section section-padding" id="special">
+
+        <div class="special-content">
+
+            <span class="section-tag">CHEF'S SPECIAL</span>
+
+            <h2>
+                Taste the Magic of
+                <span>Authentic Biryani</span>
+            </h2>
+
+            <p>
+                Carefully cooked rice, aromatic spices and rich flavours
+                come together to create a memorable dining experience.
+            </p>
+
+            <a href="#menu" class="btn btn-primary">
+                Order Your Favourite
+            </a>
+
+        </div>
+
+        <div class="special-dish">
+            <img
+                src="https://tse3.mm.bing.net/th/id/OIP.j8ykvcbyjRGNi4Zo4QtBZwHaE7?r=0&pid=Api&h=220&P=0">
+        </div>
+
+    </section>
+
+
+    <!-- GALLERY -->
+    <section class="gallery-section section-padding">
+
+        <div class="section-heading">
+            <span class="section-tag">FOOD GALLERY</span>
+            <h2>A Feast for <span>Your Eyes</span></h2>
+            <p>Explore some of our delicious food moments.</p>
+        </div>
+
+        <div class="gallery-grid">
+
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=700&q=85"
+                alt="Indian thali">
+
+            <img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?w=700&q=85"
+                alt="Biryani">
+
+            <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=700&q=85"
+                alt="Dosa">
+
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700&q=85"
+                alt="Chocolate cake">
+
+            <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=700&q=85"
+                alt="Paneer dish">
+
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=700&q=85"
+                alt="Coffee">
+
+        </div>
+
+    </section>
+
+
+    <!-- REVIEWS -->
+    <section class="reviews-section section-padding" id="reviews">
+
+        <div class="section-heading">
+            <span class="section-tag">CUSTOMER REVIEWS</span>
+            <h2>What Our <span>Guests Say</span></h2>
+            <p>Every happy customer makes our day special.</p>
+        </div>
+
+        <div class="reviews-grid">
+
+            <article class="review-card">
+                <div class="rating-stars">★★★★★</div>
+                <p>
+                    "The food was delicious and the flavours were amazing.
+                    Loved the overall dining experience!"
+                </p>
+                <h3>Priya S.</h3>
+                <span>Food Lover</span>
+            </article>
+
+            <article class="review-card">
+                <div class="rating-stars">★★★★★</div>
+                <p>
+                    "Great food, beautiful presentation and friendly service.
+                    Definitely a place to visit again."
+                </p>
+                <h3>Arun K.</h3>
+                <span>Happy Customer</span>
+            </article>
+
+            <article class="review-card">
+                <div class="rating-stars">★★★★★</div>
+                <p>
+                    "Loved the biryani and combo offers.
+                    A wonderful place to enjoy with family."
+                </p>
+                <h3>Divya R.</h3>
+                <span>Regular Guest</span>
+            </article>
+
+        </div>
+
+        <p class="offer-note">
+            *Sample testimonials for demonstration purposes.
+        </p>
+
+    </section>
+
+
+    <!-- RESERVATION -->
+    <section class="reservation-section section-padding" id="reservation">
+
+        <div class="reservation-content">
+
+            <span class="section-tag">TABLE RESERVATION</span>
+
+            <h2>
+                Reserve Your
+                <span>Perfect Table</span>
+            </h2>
+
+            <p>
+                Planning a family dinner or a special celebration?
+                Reserve your table and enjoy a wonderful dining experience.
+            </p>
+
+            <div class="reservation-detail">
+                <i class="fa-solid fa-clock"></i>
+                <span>Opening Hours: 9:00 AM – 10:00 PM</span>
+            </div>
+
+            <div class="reservation-detail">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Coimbatore, Tamil Nadu</span>
+            </div>
+
+        </div>
+
+
+        <form class="reservation-form">
+
+            <h3>Book a Table</h3>
+
+            <div class="form-group">
+                <label for="customer-name">Full Name</label>
+                <input type="text" id="customer-name"
+                    placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="customer-email">Email Address</label>
+                <input type="email" id="customer-email"
+                    placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="customer-phone">Phone Number</label>
+                <input type="tel" id="customer-phone"
+                    placeholder="10-digit mobile number"
+                    pattern="[0-9]{10}" maxlength="10" required>
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="booking-date">Date</label>
+                    <input type="date" id="booking-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="booking-time">Time</label>
+                    <select id="booking-time" required>
+                        <option value="">Select Time</option>
+                        <option>09:00 AM</option>
+                        <option>10:00 AM</option>
+                        <option>12:00 PM</option>
+                        <option>01:00 PM</option>
+                        <option>02:00 PM</option>
+                        <option>06:00 PM</option>
+                        <option>07:00 PM</option>
+                        <option>08:00 PM</option>
+                        <option>09:00 PM</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <select id="guests" required>
+                    <option value="">Select Guests</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6">6 People</option>
+                    <option value="7">7 People</option>
+                    <option value="8">8 People</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Confirm Reservation
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact-section section-padding" id="contact">
+
+        <div class="section-heading">
+            <span class="section-tag">GET IN TOUCH</span>
+            <h2>Visit <span>Our Restaurant</span></h2>
+            <p>We would love to welcome you!</p>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Our Location</h3>
+                <p>Coimbatore, Tamil Nadu, India</p>
+            </div>
+
+            <div class="contact-card">
+                <i class="fa-solid fa-phone"></i>
+                <h3>Call Us</h3>
+                <p>+91 98765 43210</p>
+            </div>
+
+            <div class="contact-card">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email Us</h3>
+                <p>hello@karunya.example</p>
+            </div>
+
+            <div class="contact-card">
+                <i class="fa-solid fa-clock"></i>
+                <h3>Opening Hours</h3>
+                <p>Every Day: 9 AM – 10 PM</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-about">
+
+                <a href="#home" class="logo footer-logo">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>KARUNYA <small>RESTAURANT</small></span>
+                </a>
+
+                <p>
+                    Good food brings people together.
+                    Experience authentic flavours and beautiful moments with us.
+                </p>
+
+                <div class="social-links">
+                    <a href="#contact" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#contact" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#contact" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#offers">Special Offers</a>
+                <a href="#about">About Us</a>
+                <a href="#reservation">Book a Table</a>
+            </div>
+
+
+            <div class="footer-links">
+                <h3>Our Menu</h3>
+                <a href="#menu">Breakfast</a>
+                <a href="#menu">Meals</a>
+                <a href="#menu">Biryani</a>
+                <a href="#menu">Starters</a>
+                <a href="#menu">Desserts</a>
+            </div>
+
+
+            <div class="footer-links">
+                <h3>Contact</h3>
+                <p>Coimbatore, Tamil Nadu</p>
+                <p>+91 98765 43210</p>
+                <p>hello@karunya.example</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © <span id="current-year"></span> Karunya Restaurant.
+                All Rights Reserved.
+            </p>
+            <p>Made with <i class="fa-solid fa-heart"></i> for food lovers.</p>
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
